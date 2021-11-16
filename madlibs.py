@@ -51,11 +51,11 @@ def greet_person():
     return render_template("compliment.html", person=player, compliment=compliment)
 
 
-@app.route("/game", methods=['POST'])
+@app.route("/game")
 def show_madlib_form():
 
-    # response = request.args.get("madlib")
-    response = request.form.get("madlib")
+    response = request.args.get("madlib")
+    # response = request.form.get("madlib") <- this didnt work
 
     if response == "no":
         return render_template("goodbye.html")
