@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>A Compliment</title>
+</head>
+<body>
+    Hi {{ person }}! I think you're {{ compliment }}!
+    <p>
+      <form action="/game">
+        Would you like to play a game of madlibs?
+      
+        <input type="radio" name="madlib" value="yes">
+        <label>Yes, I'd like to play a game.</label>
+      
+        <input type="radio" name="madlib" value="no">
+        <label>No, I don't want to play a game.</label>
+      <p></p>
+        <input type="submit">
+      </form>
+    </p>
+</body>
+</html>
+
+<!-- <form action="nextpage.php" method="POST">
+  <input type="submit"/>
+</form> -->
+
+<!-- radio buttons yes/no
+form should submit to url /game -->
